@@ -38,6 +38,10 @@ namespace pryRamosSP2
             txtCantidad.Clear();
             cmbTicket.SelectedIndex = -1;
             txtCantidad.Focus();
+
+            StreamWriter sw = new StreamWriter("MiUnicoArchivo", true);
+            sw.WriteLine(registro);
+            sw.Close();
         }
 
         private void txtCantidad_TextChanged(object sender, EventArgs e)

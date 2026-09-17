@@ -42,6 +42,7 @@
             // 
             // dtpHorario
             // 
+            dtpHorario.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dtpHorario.Location = new Point(151, 108);
             dtpHorario.Name = "dtpHorario";
             dtpHorario.Size = new Size(186, 23);
@@ -58,6 +59,7 @@
             // 
             // btnRegistrar
             // 
+            btnRegistrar.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btnRegistrar.Location = new Point(151, 241);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(97, 47);
@@ -68,6 +70,7 @@
             // 
             // lstVentas
             // 
+            lstVentas.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lstVentas.FormattingEnabled = true;
             lstVentas.Location = new Point(-1, 306);
             lstVentas.Name = "lstVentas";
@@ -148,6 +151,7 @@
             Controls.Add(cmbTicket);
             Controls.Add(dtpHorario);
             ForeColor = SystemColors.ActiveCaptionText;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmVentasDeTickets";
             Text = "GENERADOR DE TICKETS";
             ResumeLayout(false);
